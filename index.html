@@ -6,102 +6,222 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Movies 2024</title>
     <style>
-*{
-    margin: 10px;
-    padding: 0;
-}body {
-    background-color: rgb(255, 227, 186);
-}
-
-#head {
-    background-color: rgb(0, 0, 0);
-    color: rgb(255, 255, 255);
-    text-align: center;
-}
-
-#search {
-    background: #ffffff;
-    display: -ms-flexbox;
-}
-
-#line {
-    color: white;
-}
-
-.mov {
-    background-color: rgb(255, 172, 48);
-    color: black;
-}
-.images {
-    background-color: black;
-    width: 200px;
-}
-.sub {
-    background-color: black;
-    color: white;
-}
-#foot {
-    background-color: black;
-    color: white;
-    text-align: center;
-}
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            background-color: rgb(190, 190, 190);
+        }
+        
+        #head {
+            background-color: rgb(0, 0, 0);
+            color: rgb(255, 255, 255);
+            text-align: center;
+            margin: 0 0 5px 0;
+        }
+        
+        .header {
+            background-color: rgb(0, 0, 0);
+            color: rgb(255, 255, 255);
+            text-align: center;
+            margin: 0 0 7px 0;
+        }
+        
+        #search {
+            background: #ffffff;
+            display: flexbox;
+            border-radius: 15px;
+            box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.445);
+            margin: 0 0 15px 0;
+        }
+        
+        #search-cotainer {
+            display: flex;
+            justify-content: center;
+            align-content: center;
+        }
+        
+        main {
+            display: flex;
+            align-content: center;
+            justify-content: center;
+        }
+        
+        ul {
+            list-style-type: none;
+            width: 70vw;
+            margin: 0 0 15px 0;
+        }
+        
+        .mov {
+            background-color: rgb(255, 0, 0);
+            border: 1vh solid white;
+            margin: 0 0 15px 0;
+        }
+        
+        .hline {
+            background-color: #fff;
+            border: solid rgb(255, 255, 255);
+        }
+        
+        hr {
+            border-width: 1vh;
+        }
+        
+        .shadow-text {
+            font-size: 20px;
+            color: white;
+            text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.7);
+            text-align: center;
+            font-style: italic;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 15px 0 15px 0;
+            background-color: black;
+            height: 20px;
+        }
+        
+        .image {
+            display: flex;
+            justify-content: center;
+            align-content: center;
+        }
+        
+        img {
+            width: 30vw;
+            border: solid white 1vw;
+            box-shadow: 5px 5px 2px 1px rgba(0, 0, 0, 0.432);
+        }
+        
+        .text-box {
+            background-color: black;
+            color: white;
+            text-align: center;
+            font-family: sans-serif;
+            padding: 1vh;
+            border: 3vh solid rgb(255, 0, 0);
+        }
+        
+        #foot {
+            background-color: rgb(0, 0, 0);
+            color: rgb(255, 255, 255);
+            text-align: center;
+            margin: 0 0 15px 0;
+        }
     </style>
 </head>
 
 <body>
     <header>
+
         <div id="head">
-            <h1>Movies 2024</h1>
+            <h1>E-Telecom</h1>
         </div>
-        <div class="box">
-            <input type="search" placeholder="search....." id="search">
-            <a href="#">
-                <i class="i01"></i>
-            </a>
+        <div class="header">
+            <h1>Movies - 2024</h1>
+        </div>
+        <div id="search-cotainer">
+            <form action="\search" method="get">
+                <input id="search" type="search" name="query" placeholder="&#128269 Search..." />
+            </form>
         </div>
     </header>
     <main>
-        <ol id=" line ">
-            <li id="m1 " class="mov ">
-                <hr>
-                <h2>Boneyard</h2>
-                <img src="https://m.media-amazon.com/images/M/MV5BNTc0MTE2M2MtOWVhYi00OWM1LWFhOWYtYzFlZDU2YTAwMGExXkEyXkFqcGc@._V1_.jpg " alt="Boneyard " class="images ">
-                <pre class="sub ">
-                    <h3>CAST</h3>
-                     Mel Gibson
-                     50 Cent
-                     Brian Van Holt
-                     Nora Zehetner
-                     Weston Cage
-                     Deena Bacon
-                     Jeremy Angel
-                     Courtney Akbar
-                     Randall J. Bacon
-                     Lilo Baier
+        <ul id="line">
+
+            <li id="m1" class="mov">
+                <div class="hline">
+                    <hr>
+                </div>
+                <h2 class="shadow-text">Boneyard</h2>
+                <div class="image">
+                    <img src="https://m.media-amazon.com/images/M/MV5BNTc0MTE2M2MtOWVhYi00OWM1LWFhOWYtYzFlZDU2YTAwMGExXkEyXkFqcGc@._V1_.jpg " alt="Boneyard ">
+                </div>
+                <pre class="text-box">
+<h3>CAST</h3>
+Mel Gibson
+50 Cent
+Brian Van Holt
+Nora Zehetner
+Weston Cage
+Deena Bacon
+Jeremy Angel
+Courtney Akbar
+Randall J. Bacon
+Lilo Baier
                 </pre>
             </li>
 
-            <li id="m2 " class="mov ">
-                <hr>
-                <h2>Singham Again</h2>
-                <img src=" https://m.media-amazon.com/images/M/MV5BMjQzZDExZDEtYjAxYy00ZGVhLWE4YWItNTVkZjA5ZjVjZWM3XkEyXkFqcGc@._V1_FMjpg_UY337_.jpghttps://m.media-amazon.com/images/M/MV5BMjQzZDExZDEtYjAxYy00ZGVhLWE4YWItNTVkZjA5ZjVjZWM3XkEyXkFqcGc@._V1_FMjpg_UY337_.jpg "
-                    alt="Boneyard " class="images ">
-                <pre class="sub ">
-                    <h3>CAST</h3>
-                    Ajay Devgn
-                    Kareena Kapoor
-                    Deepika Padukone
-                    Ranveer Singh
-                    Akshay Kumar
-                    Tiger Shroff
-                    Jackie Shroff
-                    Arjun Kapoor
-                    Ravi Kishan
-                    Dayanand Shetty
+            <li id="m2" class="mov">
+                <div class="hline">
+                    <hr>
+                </div>
+                <h2 class="shadow-text">Singham Again</h2>
+                <div class="image">
+                    <img src=" https://m.media-amazon.com/images/M/MV5BMjQzZDExZDEtYjAxYy00ZGVhLWE4YWItNTVkZjA5ZjVjZWM3XkEyXkFqcGc@._V1_FMjpg_UY337_.jpg" alt="Singham Again">
+                </div>
+                <pre class="text-box">
+<h3>CAST</h3>
+Ajay Devgn
+Kareena Kapoor
+Deepika Padukone
+Ranveer Singh
+Akshay Kumar
+Tiger Shroff
+Jackie Shroff
+Arjun Kapoor
+Ravi Kishan
+Dayanand Shetty
                 </pre>
             </li>
-        </ol>
+
+            <li id="m3" class="mov">
+                <div class="hline">
+                    <hr>
+                </div>
+                <h2 class="shadow-text">Bhool Bhulaiyaa 3</h2>
+                <div class="image">
+                    <img src="https://m.media-amazon.com/images/M/MV5BNmQyMGY3ZjctNTc1MC00ZDY0LWIxOTMtYzQ3OWVhODQ1N2FkXkEyXkFqcGc@._V1_.jpg" alt="Bhool Bhulaiyaa 3">
+                </div>
+                <pre class="text-box">
+<h3>CAST</h3>
+Kartik Aaryan
+Vidya Balan
+Madhuri Dixit
+Triptii Dimri
+Vijay Raaz
+Rajpal Yadav
+Sanjay Mishra	
+Ashwini Kalsekar
+Rajesh Sharma
+Manish Wadhwa
+                </pre>
+            </li>
+
+            <li id="m4" class="mov">
+                <div class="hline">
+                    <hr>
+                </div>
+                <h2 class="shadow-text">Hahacar</h2>
+                <div class="image">
+                    <img src="https://m.media-amazon.com/images/M/MV5BMWI3NzY5NTktNTMzNC00ZmVjLTkzMjEtY2NiNTg0MDJiYTVhXkEyXkFqcGc@._V1_.jpg" alt="Hahacar">
+                </div>
+                <pre class="text-box">
+<h3>CAST</h3>
+Mayur Chauhan
+Hemang Shah
+Mayank Gadhvi
+Chetan Daiya
+Kushal Mistry
+Tusharika Rajguru
+Raj Vitthalpura
+                </pre>
+            </li>
+
+        </ul>
     </main>
+
     <footer>
         <div id="foot">
             <h1>MOVIE WORLD</h1>
